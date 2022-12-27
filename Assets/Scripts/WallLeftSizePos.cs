@@ -12,16 +12,16 @@ public class WallLeftSizePos : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Transform transform = gameObject.transform;
+
+        transform.localScale = new Vector3(1, height, depth);
+        transform.position = new Vector3((-width / 2) * 10, 0, depth * 10);
     }
 
     // Update is called once per frame
     void Update()
     {
-        Transform transform = gameObject.transform;
-
-        transform.localScale = new Vector3(1, height, depth);
-        transform.position = new Vector3((-width/2)*10, 0, depth * 10);
+        
 
     }
 }

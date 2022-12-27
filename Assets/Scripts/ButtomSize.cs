@@ -12,15 +12,15 @@ public class ButtomSize : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Transform transform = gameObject.transform;
+
+        transform.localScale = new Vector3(width, 1, depth);
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        Transform transform = gameObject.transform;
-
-        transform.localScale = new Vector3(width, 1, depth);
+       
     }
 }
