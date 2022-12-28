@@ -86,7 +86,8 @@ public class CAMERA : MonoBehaviour
             horizontalInput = Mathf.Clamp(horizontalInput, -20, 20);
             horizontalInput += Input.GetAxis("Mouse X") * rotationSpeed * Time.deltaTime;
 
-            transform.localRotation = Quaternion.Euler(verticalInput, -horizontalInput, 1);
+            transform.localRotation = Quaternion.Euler(verticalInput, -horizontalInput, 0);
+
         }
     }
 
@@ -111,7 +112,7 @@ public class CAMERA : MonoBehaviour
             move = StartMousePosition - newMousePosition;
          
 
-            Debug.Log("start pos = " + StartMousePosition + " new position = " + newMousePosition + " move X = " + move.x);
+            //Debug.Log("start pos = " + StartMousePosition + " new position = " + newMousePosition + " move X = " + move.x);
 
             transform.position += new Vector3(move.x *panSpeed *Time.deltaTime, move.y * panSpeed *Time.deltaTime, 0);
 
