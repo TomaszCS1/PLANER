@@ -1,1 +1,2 @@
 # PLANER
+Unity prototype for a furniture planner designed to help users design shelves or storage spaces. The user sets the dimensions of a room and inserts a 3D model of furniture from a side bar menu system. The planner then calculates the cost of the furniture and design. Currently in development, this tool aims to provide an intuitive and efficient way for users to visualize and plan their furniture arrangements.
